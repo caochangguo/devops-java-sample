@@ -26,7 +26,20 @@
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.3.5.RELEASE</version>
   </parent>
-
+<repositories>
+        <repository>
+            <id>nexus-aliyun</id>
+            <name>Nexus aliyun</name>
+            <layout>default</layout>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+ </repositories>
     
 
     <build>
